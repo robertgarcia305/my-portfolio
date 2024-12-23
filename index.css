@@ -25,7 +25,20 @@ section {
     border: 1px solid red;
 }
 
+/* nav */
+.desktop-nav-wrap {
+    display: flex;
+    justify-content: space-between;
+}
 
+/* projects */
+.project-title {
+    text-align: center;
+}
+
+.project-left-title {
+    display: flex;
+}
 
 @media (max-width: 1024px) {
     
