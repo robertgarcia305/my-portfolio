@@ -1,3 +1,18 @@
+@font-face {
+    font-family: headers;
+    src: url(fonts/Inter/static/Inter_18pt-Bold.ttf);
+}
+
+@font-face {
+    font-family: paragraphs;
+    src: url(fonts/Roboto_Mono/static/RobotoMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: semibold;
+    src: url(fonts/Roboto_Mono/static/RobotoMono-SemiBold.ttf);
+}
+
 * {
     margin: 0px;
     box-sizing: border-box;
@@ -13,6 +28,19 @@ body {
     align-items: center;
 }
 
+h3, h2, h1 {
+    font-family: headers;
+}
+
+h2, h1 {
+    font-size: 28px;
+}
+
+p, a, li {
+    font-family: paragraphs;
+    font-size: 13px;
+}
+
 ul, li {
     list-style: none;
     margin: 0px;
@@ -21,6 +49,10 @@ ul, li {
 
 a {
     text-decoration: none;
+}
+
+.semibold {
+    font-family: semibold;
 }
 
 section {
@@ -36,9 +68,40 @@ section {
     justify-content: space-between;
 }
 
+.logo-wrap img {
+    width: 100px;
+}
+
+/* hero */
+.hero-card {
+    box-shadow: 0px -6px 18px 1px rgba(255,255,255,0.43) inset;
+-webkit-box-shadow: 0px -6px 18px 1px rgba(255,255,255,0.43) inset;
+-moz-box-shadow: 0px -6px 18px 1px rgba(255,255,255,0.43) inset;
+border: 1px solid white;
+border-radius: 20px;
+padding: 30px 20px;
+height: 250px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+.hero-button {
+    background: white;
+    color: black;
+    border-radius: 30px;
+    width: fit-content;
+    padding: 10px;
+}
+
 /* projects */
 .project-title {
     text-align: center;
+}
+
+.project-title h2 {
+    font-size: 20px;
 }
 
 .project-left-title {
@@ -47,6 +110,7 @@ section {
 }
 .project-left-title h3 {
     margin-left: 5px;
+    font-size: 16px;
 }
 .project-left-description p, .project-left-description ul li {
     text-align: justify;
