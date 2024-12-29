@@ -11,31 +11,38 @@
         <nav>
             <div class="desktop-nav-wrap">
                 <div class="logo-wrap">
-                    <img src="img/logo.png" alt="logo">
+                    <a href="index.html"><img src="img/logo.png" alt="logo"></a>
                 </div>
-                <ul>
+                <ul class="main-desktop-nav">
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Experience + Skills</a></li>
                 </ul>
                 <ul>
-                    <li class="contact-button"><a href="#">Contact</a></li>
+                    <a href="#"><li class="contact-button">Contact Me</li></a>
                 </ul>
             </div>
-            <div class="mobile-nav-wrap"></div>
+            <div class="mobile-nav-wrap">
+                <div class="mobile-nav-top">TOP NAV</div>
+                <div class="mobile-nav-bottom"> BOTTOM NAV</div>
+            </div>
         </nav>
         <section class="hero-wrap">
+            <div class="mobile-hero-video">
+                <video autoplay muted loop playsinline src="img/test-video.mp4"></video>
+            </div>
             <div class="hero-left">
-                <video src="img/test-video.mp4"></video>
+                <video autoplay muted loop playsinline src="img/test-video.mp4"></video>
             </div>
             <div class="hero-right">
                 <div class="ball-1">
                     <img src="img/blue.png" alt="blue">
                 </div>
                 <div class="hero-card">
-                    <h1>Hello my name is ___</h1>
-                    <p>this is a paragraph</p>
-                    <a class="hero-button">
-                        <div href="#">See My Projects</div>
+                    <h1>Hello, my name is <span class="gradient">Robert</span></h1>
+                    <p>I’m passionate about solving design challenges and creating intuitive, 
+                        user-focused solutions that drive results</p>
+                    <a href="#" class="hero-button">
+                        <div>See My Projects</div>
                     </a>
                 </div>
                 <div class="ball-2">
@@ -47,8 +54,15 @@
         <section class="projects-wrap">
             <div class="projects-title">
                 <h2>My Projects</h2>
-                <p>Some info here about the projects</p>
+                <p>Each project showcases my diverse ability to solve problems with 
+                    thoughtful design and user-centered solutions. From seamless 
+                    e-commerce experiences to easy to navigate dental clinic websites,  
+                    Explore my work to see how I blend creativity, functionality, 
+                    and my passion for creating digital products</p>
             </div>
+            <!-- <div class="figma-video">
+                <a href="#"><div>Video: how to remove Figma's UI</div></a>
+            </div> -->
             <div class="project-grid">
                 <div class="project-wrap">
                     <div class="project-title">
@@ -92,7 +106,7 @@
                                     <h3>Process</h3>    
                                 </div>
                                 <div class="project-left-description">
-                                    <p>I wanted to this project to be very 
+                                    <p>I wanted for this project to be very 
                                         minimalistic without much color apart 
                                         from the juice itself which already has
                                          bright vivid color, so i wanted to 
@@ -107,23 +121,236 @@
                                 <div class="project-img">
                                     <!-- add slideshow here -->
                                      <div class="slider">
-                                        <img src="img/blendr/img-1.png" alt="">
-                                        <img src="img/blendr/img-2.png" alt="">
+                                        <video autoplay muted loop src="img/blendr/blendr-juicery-video-1.mp4"></video>
+                                        <video autoplay muted loop src="img/blendr/blendr-juicery-video-2.mp4"></video>
+                                        <video autoplay muted loop src="img/blendr/blendr-juicery-video-3.mp4"></video>
+                                        <img src="img/blendr/blendr-juicery-1.png" alt="">
+                                        <img src="img/blendr/blendr-juicery-2.png" alt="">
+                                        <img src="img/blendr/blendr-juicery-3.png" alt="">
+                                        <img src="img/blendr/blendr-juicery-4.png" alt="">
+                                        <img src="img/blendr/blendr-juicery-5.png" alt="">
+                                        <img src="img/blendr/blendr-juicery-6.png" alt="">
+                                        <img src="img/blendr/blendr-juicery-7.png" alt="">
+                                        <img src="img/blendr/blendr-juicery-8.png" alt="">
+                                        <img src="img/blendr/blendr-juicery-9.png" alt="">
+                                        <img src="img/blendr/blendr-juicery-10.png" alt="">
+                                        <img src="img/blendr/blendr-juicery-11.png" alt="">
+                                        <img src="img/blendr/blendr-juicery-12.png" alt="">
+                                        <img src="img/blendr/blendr-juicery-13.png" alt="">
+                                        <img src="img/blendr/blendr-juicery-14.png" alt="">
+                                        <img src="img/blendr/blendr-juicery-15.png" alt="">
+                                        <img src="img/blendr/blendr-juicery-16.png" alt="">
+                                        <img src="img/blendr/blendr-juicery-17.png" alt="">
+                                        
                                      </div>
                                     
                                 </div>
                                 <div class="arrow" id="next-arrow"><img src="img/arrow-right.png" alt=""></div>
                             </div>
-                           
-                            <div class="project-buttons">
-                                <a href="#" class="project-button-wrap">
-                                    <img src="img/phone.png" alt="Phone-icon">
-                                    <div>Mobile</div>
-                                </a>
-                                <a href="#" class="project-button-wrap">
-                                    <img src="img/computer.png" alt="Desktop-icon">
-                                    <div>Desktop</div>
-                                </a>
+                            <div class="project-links">
+                                <div class="proto-title">
+                                    <p>Browse Prototype By Device Type</p>
+                                </div>
+                                <div class="project-buttons">
+                                    <a target="_blank" href="https://www.figma.com/proto/ekV0HYsUxIwTOpzWLoQcIt/Blendr-Juicery-Landing?node-id=351-97&t=K8ET4Wxzs2YxADQp-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=230%3A156&hide-ui=1" class="project-button-wrap">
+                                        <img src="img/phone.png" alt="Phone-icon">
+                                        <div>Mobile</div>
+                                    </a>
+                                    <a target="_blank" href="https://www.figma.com/proto/ekV0HYsUxIwTOpzWLoQcIt/Blendr-Juicery-Landing?node-id=1-2&t=K8ET4Wxzs2YxADQp-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=230%3A156&hide-ui=1" class="project-button-wrap">
+                                        <img src="img/computer.png" alt="Desktop-icon">
+                                        <div>Desktop</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-wrap">
+                    <div class="project-title">
+                        <h2>Samana Architects</h2>
+                    </div>
+                    <div class="project-brief">
+                        <div class="project-left">
+                            <div class="project-left-wrap">
+                                <div class="project-left-title">
+                                    <img src="img/project-circle.png" alt="#">
+                                    <h3>Brief</h3>    
+                                </div>
+                                <div class="project-left-description">
+                                    <p>Samana is an architectural firm website that 
+                                        highlights their expertise in designing high-end 
+                                        houses, offices, and office spaces. The goal was to 
+                                        create a platform that reflects the firm's 
+                                        sophistication and showcases their impressive portfolio</p>
+                                </div>
+                            </div>
+                            <div class="project-left-wrap">
+                                <div class="project-left-title">
+                                    <img src="img/project-circle.png" alt="#">
+                                    <h3>Key Features</h3>    
+                                </div>
+                                <div class="project-left-description">
+                                    <ul>
+                                        <li><span class="semibold">Image Slider:</span> 
+                                            A visually striking image slider to feature 
+                                            their premium designs</li>
+                                        <li><span class="semibold">Interactive Timeline:</span> 
+                                            A firm timeline with hidden overflow that reveals
+                                             more as the user scrolls. Once the timeline 
+                                             is completed, the page transitions seamlessly 
+                                             to the next section, optimizing space and user 
+                                             engagement</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-left-wrap">
+                                <div class="project-left-title">
+                                    <img src="img/project-circle.png" alt="#">
+                                    <h3>Process</h3>    
+                                </div>
+                                <div class="project-left-description">
+                                    <p>I wanted for this project to be very 
+                                        visual especially since the we had 
+                                        beautiful images to work with, we wanted 
+                                        to showcase their products visually as much 
+                                        as possible, highlighting their high quality 
+                                        when it comes to building their projects</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-right">
+                            <div class="project-top">
+                                <div class="arrow" id="prev-arrow"><img src="img/arrow-left.png" alt=""></div>
+                                <div class="project-img">
+                                    <!-- add slideshow here -->
+                                     <div class="slider">
+                                        <video autoplay muted loop src="img/samana/samana-architects-video-1.mp4"></video>
+                                        <video autoplay muted loop src="img/samana/samana-architects-video-2.mp4"></video>        
+                                        <img src="img/samana/samana-architects-1.png" alt="">
+                                        <img src="img/samana/samana-architects-2.png" alt="">
+                                        <img src="img/samana/samana-architects-3.png" alt="">
+                                        <img src="img/samana/samana-architects-4.png" alt="">
+                                        <img src="img/samana/samana-architects-5.png" alt="">
+                                        <img src="img/samana/samana-architects-6.png" alt="">
+                                        <img src="img/samana/samana-architects-7.png" alt="">
+                                        <img src="img/samana/samana-architects-8.png" alt="">  
+                                        <img src="img/samana/samana-architects-9.png" alt="">                                        
+                                     </div>
+                                    
+                                </div>
+                                <div class="arrow" id="next-arrow"><img src="img/arrow-right.png" alt=""></div>
+                            </div>
+                            <div class="project-links">
+                                <div class="proto-title">
+                                    <p>Browse Prototype By Device Type</p>
+                                </div>
+                                <div class="project-buttons">
+                                    <a target="_blank" href="https://www.figma.com/proto/pDG0FiAV3aAjSpISFenZoQ/Samana-Architects?node-id=108-41&t=76g57n0BBI0SNv9a-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&hide-ui=1" class="project-button-wrap">
+                                        <img src="img/phone.png" alt="Phone-icon">
+                                        <div>Mobile</div>
+                                    </a>
+                                    <a target="_blank" href="https://www.figma.com/proto/pDG0FiAV3aAjSpISFenZoQ/Samana-Architects?node-id=1-2&t=76g57n0BBI0SNv9a-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&hide-ui=1" class="project-button-wrap">
+                                        <img src="img/computer.png" alt="Desktop-icon">
+                                        <div>Desktop</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-wrap">
+                    <div class="project-title">
+                        <h2>Zen Dental</h2>
+                    </div>
+                    <div class="project-brief">
+                        <div class="project-left">
+                            <div class="project-left-wrap">
+                                <div class="project-left-title">
+                                    <img src="img/project-circle.png" alt="#">
+                                    <h3>Brief</h3>    
+                                </div>
+                                <div class="project-left-description">
+                                    <p>Zen Dental is a fully functional dental clinic
+                                         website designed with the primary goal of 
+                                         generating leads and simplifying the process 
+                                         of making an appointment. The design ensures 
+                                         users can book an appointment effortlessly, 
+                                         without needing to search very hard for this section</p>
+                                </div>
+                            </div>
+                            <div class="project-left-wrap">
+                                <div class="project-left-title">
+                                    <img src="img/project-circle.png" alt="#">
+                                    <h3>Key Features</h3>    
+                                </div>
+                                <div class="project-left-description">
+                                    <ul>
+                                        <li><span class="semibold">Seamless Appointment Booking:</span> 
+                                            A user-friendly appointment creation page</li>
+                                        <li><span class="semibold">Innovative Design Elements:</span> 
+                                            Inverted border-radius sections for a modern aesthetic</li>
+                                        <li><span class="semibold">Engaging Video Content:</span> 
+                                            Videos featuring doctors explaining the processes behind 
+                                            their offered services</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-left-wrap">
+                                <div class="project-left-title">
+                                    <img src="img/project-circle.png" alt="#">
+                                    <h3>Process</h3>    
+                                </div>
+                                <div class="project-left-description">
+                                    <p>The focus of the design was to align with Zen Dental's 
+                                        mission—making dental visits a peaceful experience. 
+                                        Just as the clinic aims to reduce stress for patients, 
+                                        the website was designed to provide a hassle-free navigation 
+                                        experience that feels calm, intuitive, and welcoming</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-right">
+                            <div class="project-top">
+                                <div class="arrow" id="prev-arrow"><img src="img/arrow-left.png" alt=""></div>
+                                <div class="project-img">
+                                    <!-- add slideshow here -->
+                                     <div class="slider">
+                                        <video autoplay muted loop src="img/zen-dental/zen-dental-video-1.mp4"></video>
+                                        <video autoplay muted loop src="img/samana/samana-architects-video-2.mp4"></video>        
+                                        <img src="img/zen-dental/zen-dental-1.png" alt="">
+                                        <img src="img/zen-dental/zen-dental-2.png" alt="">
+                                        <img src="img/zen-dental/zen-dental-3.png" alt="">
+                                        <img src="img/zen-dental/zen-dental-4.png" alt="">
+                                        <img src="img/zen-dental/zen-dental-5.png" alt="">
+                                        <img src="img/zen-dental/zen-dental-6.png" alt="">
+                                        <img src="img/zen-dental/zen-dental-7.png" alt="">
+                                        <img src="img/zen-dental/zen-dental-8.png" alt="">
+                                        <img src="img/zen-dental/zen-dental-9.png" alt="">
+                                        <img src="img/zen-dental/zen-dental-10.png" alt="">
+                                        <img src="img/zen-dental/zen-dental-11.png" alt="">
+                                        <img src="img/zen-dental/zen-dental-12.png" alt="">
+                                        <img src="img/zen-dental/zen-dental-13.png" alt="">
+                                     </div>
+                                    
+                                </div>
+                                <div class="arrow" id="next-arrow"><img src="img/arrow-right.png" alt=""></div>
+                            </div>
+                            <div class="project-links">
+                                <div class="proto-title">
+                                    <p>Browse Prototype By Device Type</p>
+                                </div>
+                                <div class="project-buttons">
+                                    <a target="_blank" href="https://www.figma.com/proto/KToP5Ze15xE8CEIsA432Su/Dental-Zen?node-id=165-752&t=pIOEtX7TkyqwZuUX-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A111&hide-ui=1" class="project-button-wrap">
+                                        <img src="img/phone.png" alt="Phone-icon">
+                                        <div>Mobile</div>
+                                    </a>
+                                    <a target="_blank" href="https://www.figma.com/proto/KToP5Ze15xE8CEIsA432Su/Dental-Zen?node-id=1-111&t=pIOEtX7TkyqwZuUX-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A111&hide-ui=1" class="project-button-wrap">
+                                        <img src="img/computer.png" alt="Desktop-icon">
+                                        <div>Desktop</div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -136,45 +363,150 @@
             
         </section>
         <section class="cv-skills-wrap">
-            <div class="cv-skills-wrap">
+            <div class="cv-skills-wrap-title">
                 <h2>Experience + Skills</h2>
-                <p>These is my description for Experience and skills</p>
+                <!-- <p>These is my description for Experience and skills</p> -->
             </div>
             <div class="cv-description-wrap">
                 <div class="experience">
-                    <h2>Experience</h2>
-                    <div class="experience-wrap">
-                        <h3>Marketing/Design Cordinator at Bioterra</h3>   
-                        <ul>
-                            <li>Design website</li>
-                            <li>Redesigned logo</li>
-                            <li>Designed packaging and product bottles</li>
-                        </ul>
+                    <div class="experience-title">
+                        <h2>Experience</h2>
                     </div>
                     <div class="experience-wrap">
-                        <h3>Website Manager at Starr Western Wear</h3>   
-                        <ul>
-                            <li>Design website</li>
-                            <li>Redesigned logo</li>
-                            <li>Designed packaging and product bottles</li>
-                        </ul>
+                        <div class="experience-block">
+                            <h3>Website Manager</h3>
+                            <p>Starr Western Wear (3 ½ Years - Present)</p>   
+                            <ul>
+                                <li>Create website mockups on Figma</li>
+                                <li>Uploaded and managed over 7000 products using Shopify</li>
+                                <li>Utilize image editing Software </li>
+                                <li>Utilize SEO best practices</li>
+                                <li>Edit existing Shopify themes (HTML, CSS, JS)</li>
+                                <li>Performed technical domain changes</li>
+                                <li>Train and guide team members</li>
+                                <li>Accessibility website edits</li>
+                            </ul>
+                        </div>
+                        <div class="experience-block">
+                            <h3>Marketing and Design Coordinator</h3>
+                            <p>Bioterra (1 Year)</p>   
+                            <ul>
+                                <li>Redesigned logo</li>
+                                <li>Established brand guidelines (Fonts, Colors, Tone)</li>
+                                <li>Created slogan</li>
+                                <li>Created box/packaging design</li>
+                                <li>Created logos</li>
+                                <li>Created website (Wix)</li>
+                                <li>Created surveys</li>
+                            </ul>
+                        </div>
+                        <div class="experience-block">
+                            <h3>Website / Product Manager</h3>
+                            <p>Belica Clothing (1 Year)</p>   
+                            <ul>
+                                <li>Product upload to website (Shopify)</li>
+                                <li>Image & Video Editing</li>
+                                <li>Created ads (Facebook and Instagram)</li>
+                                <li>Sourced and negotiated with optimal raw material providers</li>
+                            </ul>
+                        </div>
+                        
                     </div>
                 </div>
-                <div class="skills"> </div>
+                <div class="experience">
+                    <div class="experience-title">
+                        <h2>Skills</h2>
+                    </div>
+                    <div class="experience-wrap">
+                        <div class="experience-block">
+                            <h3>Web Development</h3>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>SQL</li>
+                                <li>Shopify</li>
+                            </ul>
+                        </div>
+                        <div class="experience-block">
+                            <h3>Design</h3>
+                            <ul>
+                                <li>Figma (Complex Prototyping)</li>
+                                <li>Image editing software</li>
+                            </ul>
+                        </div>
+                        <div class="experience-block">
+                            <h3>Marketing & SEO</h3>
+                            <ul>
+                                <li>Ads (Facebook & Instagram)</li>
+                                <li>SEO Tools (Yoast)</li>
+                                <li>SEO best practices</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="experience-title">
+                        <h2>Education</h2>
+                    </div>
+                    <div class="experience-wrap">
+                        <div class="experience-block">
+                            <h3>Marketing Degree (UANL - Mexico)</h3>
+                            <p>4 1/2 Years</p>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="experience-title">
+                        <h2>Certificates & Courses</h2>
+                    </div>
+                    <div class="experience-wrap">
+                        <div class="experience-block">
+                            <h3>Microsoft Excel Course</h3>
+                            <p>(Intermediate Certificate)</p>
+                            
+                        </div>
+                        <div class="experience-block">
+                            <h3>User Experience UX Course</h3>
+                            <p>Accenture</p>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </div>
             </div>
             <div class="cv-button">
-                <a href="#">Full PDF</a>
+                <a href="#">Download My CV</a>
             </div>
         </section>
         <section class="contact-wrap">
             <div class="contact-top">
-                <h3>Contact Me</h3>
-                <p>if yo uhave any questions about any of my projects, please feel free to reach out</p>
+                <h2>Contact Me</h2>
+                <p>If you have any questions about any of my projects, don't hesitate
+                    to reach me out
+                </p>
             </div>
             <div class="contact-card">
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="contact-block">
+                    <div class="icon-wrap">
+                        <img src="img/phone-icon.png" alt="">
+                    </div>
+                    <div class="contact-text-block">
+                        <p><span class="semibold">Call Or Text Me: </span><a href="tel:+19159960387">(915) 996 - 0387</a></p>
+                    </div>
+                </div>
+                <div class="contact-block">
+                    <div class="icon-wrap">
+                        <img src="img/mail-icon.png" alt="">
+                    </div>
+                    <div class="contact-text-block">
+                        <p><span class="semibold">Email: </span><a href="mailto:robertserranogar@gmail.com">robertserranogar@gmail.com</a></p>
+                    </div>
+                </div>
             </div>
         </section>
     </body>

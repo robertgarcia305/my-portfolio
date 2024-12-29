@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // make it so it works with multiple sliders
+
     const slider = document.querySelector(".slider");
     const prevArrow = document.getElementById("prev-arrow");
     const nextArrow = document.getElementById("next-arrow");
