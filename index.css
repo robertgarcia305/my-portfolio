@@ -577,4 +577,43 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
     .contact-top p {
         width: 90%;
     }
+
+    .mobile-logo-wrap {
+        width: 50px;
+    }
+
+    .mobile-logo-wrap img {
+        width: 100%;
+    }
+
+    .mobile-nav-wrap{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .mobile-nav-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .x {
+        display: none;
+    }
+
+    .mobile-nav-bottom {
+        display: none;
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .mobile-nav-bottom ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-nav-bottom ul li {
+        margin: 10px 0px;
+    }
 }

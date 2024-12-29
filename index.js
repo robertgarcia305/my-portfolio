@@ -33,4 +33,24 @@ document.addEventListener("DOMContentLoaded", () => {
         slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
         slider.style.transition = "none"; // Disable transitions
     }
+
+
+    // Select the elements
+    const menuIcon = document.querySelector('.menu');
+    const closeIcon = document.querySelector('.x');
+    const bottomNav = document.querySelector('.mobile-nav-bottom');
+
+    // Show bottom nav on menu click
+    menuIcon.addEventListener('click', () => {
+        bottomNav.style.display = "flex";
+        menuIcon.style.display = 'none'; // Hide the menu icon
+        closeIcon.style.display = 'block'; // Show the close icon
+    });
+
+    // Hide bottom nav on close (X) click
+    closeIcon.addEventListener('click', () => {
+        bottomNav.style.display = "none";
+        menuIcon.style.display = 'block'; // Show the menu icon
+        closeIcon.style.display = 'none'; // Hide the close icon
+    });
 });
