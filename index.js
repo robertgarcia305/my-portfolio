@@ -1,53 +1,52 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // make it so it works with multiple sliders
+    // Select all sliders and their arrows
+    const sliders = document.querySelectorAll(".slider");
+    const prevArrows = document.querySelectorAll("#prev-arrow");
+    const nextArrows = document.querySelectorAll("#next-arrow");
 
-    const slider = document.querySelector(".slider");
-    const prevArrow = document.getElementById("prev-arrow");
-    const nextArrow = document.getElementById("next-arrow");
+    sliders.forEach((slider, index) => {
+        let currentIndex = 0;
+        
+        // Bind the corresponding arrows to this slider
+        const prevArrow = prevArrows[index];
+        const nextArrow = nextArrows[index];
 
-    let currentIndex = 0;
+        prevArrow.addEventListener("click", () => {
+            if (currentIndex === 0) {
+                currentIndex = slider.children.length - 1; // Loop to last slide
+            } else {
+                currentIndex--;
+            }
+            updateSlider(slider, currentIndex);
+        });
 
-    prevArrow.addEventListener("click", () => {
-        if (currentIndex === 0) {
-            // Loop back to the last image
-            currentIndex = slider.children.length - 1;
-        } else {
-            currentIndex--;
+        nextArrow.addEventListener("click", () => {
+            if (currentIndex === slider.children.length - 1) {
+                currentIndex = 0; // Loop to first slide
+            } else {
+                currentIndex++;
+            }
+            updateSlider(slider, currentIndex);
+        });
+
+        function updateSlider(sliderElement, index) {
+            const slideWidth = sliderElement.children[0].clientWidth;
+            sliderElement.style.transform = `translateX(-${index * slideWidth}px)`;
+            sliderElement.style.transition = "none"; // Disable transitions
         }
-        updateSlider();
     });
 
-    nextArrow.addEventListener("click", () => {
-        if (currentIndex === slider.children.length - 1) {
-            // Loop back to the first image
-            currentIndex = 0;
-        } else {
-            currentIndex++;
-        }
-        updateSlider();
-    });
-
-    function updateSlider() {
-        const slideWidth = slider.children[0].clientWidth;
-        // Instantly move to the desired image without a transition
-        slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-        slider.style.transition = "none"; // Disable transitions
-    }
-
-
-    // Select the elements
+    // Navigation functionality (unchanged)
     const menuIcon = document.querySelector('.menu');
     const closeIcon = document.querySelector('.x');
     const bottomNav = document.querySelector('.mobile-nav-bottom');
 
-    // Show bottom nav on menu click
     menuIcon.addEventListener('click', () => {
         bottomNav.style.display = "flex";
         menuIcon.style.display = 'none'; // Hide the menu icon
         closeIcon.style.display = 'block'; // Show the close icon
     });
 
-    // Hide bottom nav on close (X) click
     closeIcon.addEventListener('click', () => {
         bottomNav.style.display = "none";
         menuIcon.style.display = 'block'; // Show the menu icon

@@ -224,7 +224,7 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
 
 /* projects */
 .projects-wrap {
-    margin: 50px 0px;
+    margin-top: 50px;
     width: 1440px;
     list-style: none;
 }
@@ -400,6 +400,7 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
     border-radius: 15px;
     width: 400px;
     text-align: left;
+    margin: 3px;
 }
 
 .experience-block p {
@@ -428,6 +429,7 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
 
 .cv-skills-wrap {
     width: 1440px;
+    margin-top: 50px;
 }
 
 .cv-skills-wrap-title p {
@@ -559,7 +561,7 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
     }
 
     .projects-wrap {
-        margin: 20px 0px;
+        margin-top: 20px;
     }
 
     .desktop-nav-wrap {
