@@ -146,6 +146,11 @@ nav {
     text-decoration: underline;
 }
 
+.mobile-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* hero */
 .hero-card {
@@ -580,7 +585,6 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
         display: flex;
         flex-direction: column;
         padding: 20px;
-        align-items: center;
     }
 
     .mobile-nav-top {
