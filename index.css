@@ -185,6 +185,11 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
     width: 50%;
 }
 
+.hero-left img {
+    width: 320px;
+    border-radius: 30px;
+}
+
 .hero-right {
     display: flex;
     align-items: center;
