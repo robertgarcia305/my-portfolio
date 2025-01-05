@@ -175,12 +175,6 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
     margin-top: 50px;
 }
 
-.hero-wrap video {
-    border-radius: 30px;
-    width: 100%;
-    max-width: 400px;
-}
-
 .hero-right, .hero-left {
     width: 50%;
 }
