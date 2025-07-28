@@ -502,6 +502,26 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
     text-decoration: underline;
 }
 
+.index-menu-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.index-menu-wrap a {
+    color: white;
+}
+
+.menu-block {
+    background-color: #20262F;
+    margin: 20px;
+    border-radius: 30px;
+    padding: 20px;
+    border: 1px solid #20262F;
+}
+
+.menu-block:hover {
+    border: 1px solid white;
+}
 
 @media (max-width: 1440px) {
     .hero-wrap, .projects-wrap, .cv-skills-wrap, .contact-wrap, nav {
