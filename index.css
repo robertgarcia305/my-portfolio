@@ -160,13 +160,16 @@ nav {
 border: 1px solid white;
 border-radius: 20px;
 padding: 30px 20px;
-height: 250px;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
 backdrop-filter: blur(20px); /* Applies the blur effect */
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hero-card p {
+    margin: 10px 0px;
 }
 
 .hero-wrap {
