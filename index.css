@@ -92,7 +92,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 .logo-wrap {
@@ -150,6 +150,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: black;
+    padding: 10px;
+    border-radius: 40px;
+    cursor: pointer;
 }
 
 /* hero */
@@ -610,7 +614,7 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
     .mobile-nav-wrap{
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        padding: 10px 20px;
     }
 
     .mobile-nav-top {
