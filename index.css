@@ -81,6 +81,7 @@ nav {
     width: 1440px;
     color: #0F0F0F;
     background-color: #f3f3f39a;
+    background-color: #f1f7f9a5;
     backdrop-filter: blur(18px);
     position: sticky;
     top: 0px;
@@ -99,6 +100,13 @@ nav {
 .logo-wrap {
     display: flex;
     align-items: center;
+}
+
+.logo-wrap p {
+    color: #0F0F0F;
+    font-family: semibold;
+    line-height: 15px;
+    font-size: 18px;
 }
 
 .logo-wrap img {
@@ -202,9 +210,10 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
     /* background: linear-gradient(90deg, rgba(54,198,244,1) 0%, rgba(135,254,201,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
-    color: #172a2b;
+    color: #0b6267;
     font-family: headers;
     font-family: paragraphs;
+    letter-spacing: -1px;
 }
 
 .ball-1 {
@@ -618,6 +627,8 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
     .mobile-logo-wrap a, .mobile-logo-wrap p {
         color: #0F0F0F;
         font-family: semibold;
+        line-height: 15px;
+        font-size: 18px;
     }
 
     .mobile-nav-wrap{
