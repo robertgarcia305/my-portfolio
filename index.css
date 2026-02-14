@@ -25,6 +25,7 @@
 
 body {
     background-color: #f5f5f5;
+    background-color: #f1f7f9;
     color: #0F0F0F;
     text-align: center;
     width: 100%;
@@ -198,9 +199,12 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
 }
 
 .gradient {
-    background: linear-gradient(90deg, rgba(54,198,244,1) 0%, rgba(135,254,201,1) 100%);
-    -webkit-background-clip: text; /* Ensures the background gradient is clipped to the text */
-    -webkit-text-fill-color: transparent;
+    /* background: linear-gradient(90deg, rgba(54,198,244,1) 0%, rgba(135,254,201,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: #172a2b;
+    font-family: headers;
+    font-family: paragraphs;
 }
 
 .ball-1 {
@@ -609,6 +613,11 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
 
     .mobile-logo-wrap img {
         width: 100%;
+    }
+
+    .mobile-logo-wrap a, .mobile-logo-wrap p {
+        color: #0F0F0F;
+        font-family: semibold;
     }
 
     .mobile-nav-wrap{
