@@ -105,6 +105,10 @@ nav {
     width: 60px;
 }
 
+.logo-wrap a {
+    color: #0F0F0F;
+}
+
 .contact-button {
     color: black;
     background-color: #26F1FF;
