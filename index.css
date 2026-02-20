@@ -81,11 +81,10 @@ nav {
     width: 1440px;
     color: #0F0F0F;
     background-color: #f3f3f39a;
-    background-color: #f1f7f9a5;
     backdrop-filter: blur(18px);
     position: sticky;
     top: 0px;
-    /* border-bottom: 1px solid white; */
+    border-bottom: 1px solid white;
     z-index: 20;
 }
 
@@ -100,13 +99,6 @@ nav {
 .logo-wrap {
     display: flex;
     align-items: center;
-}
-
-.logo-wrap p {
-    color: #0F0F0F;
-    font-family: semibold;
-    line-height: 15px;
-    font-size: 18px;
 }
 
 .logo-wrap img {
@@ -170,7 +162,7 @@ nav {
     box-shadow: 0px -6px 18px 1px rgba(255,255,255,0.43) inset;
 -webkit-box-shadow: 0px -6px 18px 1px rgba(255,255,255,0.43) inset;
 -moz-box-shadow: 0px -6px 18px 1px rgba(255,255,255,0.43) inset;
-border: 1px solid #253d41;
+border: 1px solid white;
 border-radius: 20px;
 padding: 30px 20px;
 display: flex;
@@ -216,23 +208,48 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
     letter-spacing: -1px;
 }
 
+.ball-1 div, .ball-2 div {
+    border-radius: 25px 46px;
+}
+
 .ball-1 {
-    position: relative;
+    /* position: relative; */
     left: 50px;
     top: 25%;
     z-index: -20;
 }
 
-.ball-2 {
+.ball-1 div {
     position: relative;
-    left: -50px;
-    /* top: 20%; */
+    left: 50px;
+    top: 68px;
     z-index: -20;
+    height: 100px;
+    width: 100px;
+    background-color: #0b6267;
 }
 
+.ball-2 {
+    /* position: relative; */
+    left: -50px;
+    top: 20%; 
+    z-index: -20;  
+}
+
+.ball-2 div {
+    position: relative;
+    left: -50px;
+    top: -20px;
+    z-index: -20;
+    height: 100px;
+    width: 100px;
+    background-color: #3eb9c0;
+}
+
+
 .hero-button {
-    background: white;
-    color: black;
+    background: #0b6267;
+    color: #ffffff;
     border-radius: 30px;
     width: fit-content;
     padding: 10px 20px;
@@ -241,6 +258,7 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
 
 .hero-button:hover {
     background: rgb(230, 230, 230);
+    background: #084c50;
 }
 
 /* projects */
@@ -404,12 +422,11 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
     display: flex;
     align-items: center;
     justify-content: center;
-    /* width: 50px;
-    height: 50px; */
+    width: 50px;
+    height: 50px;
     background-color: #121213;
     border-radius: 40px;
     border: 1px solid rgb(111, 111, 111);
-    padding: 10px;
 }
 
 .experience {
@@ -467,7 +484,7 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
 }
 
 .cv-button a {
-    background-color: white;
+    background-color: #26F1FF;
     padding: 10px 20px;
     border-radius: 50px;
     color: black;
@@ -515,6 +532,10 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
     margin-bottom: 10px;
 }
 
+.contact-text-block p {
+    text-align: left;
+}
+
 .contact-text-block a {
     color: #0F0F0F;
     text-decoration: underline;
@@ -527,11 +548,11 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
 
 .index-menu-wrap a {
     color: white;
+    margin: 10px;
 }
 
 .menu-block {
     background-color: #20262F;
-    margin: 20px;
     border-radius: 30px;
     padding: 20px;
     border: 1px solid #20262F;
@@ -553,6 +574,17 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
     .ball-1, .ball-2 {
         width: 30px;
     }
+
+    .ball-1 div {
+        position: relative;
+        left: 0px;
+        top: 68px;
+        z-index: -20;
+        height: 100px;
+        width: 100px;
+        background-color: #0b6267;
+    }
+    
     .hero-right {
         overflow: hidden;
     }
@@ -577,8 +609,37 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
     }
 
     .ball-1 {
+    /* position: relative; */
+        left: 50px;
+        top: 25%;
+        z-index: -20;
+    }
+
+    .ball-1 div {
+        position: relative;
         left: 0px;
-        top: 80px;
+        top: 68px;
+        z-index: -20;
+        height: 100px;
+        width: 100px;
+        background-color: #0b6267;
+    }
+
+    .ball-2 {
+        /* position: relative; */
+        left: -50px;
+        top: 20%; 
+        z-index: -20;  
+    }
+
+    .ball-2 div {
+        position: relative;
+        left: -50px;
+        /* top: 20%; */
+        z-index: -20;
+        height: 100px;
+        width: 100px;
+        background-color: #3eb9c0;
     }
 
     .hero-right {
@@ -628,8 +689,6 @@ backdrop-filter: blur(20px); /* Applies the blur effect */
     .mobile-logo-wrap a, .mobile-logo-wrap p {
         color: #0F0F0F;
         font-family: semibold;
-        line-height: 15px;
-        font-size: 18px;
     }
 
     .mobile-nav-wrap{
